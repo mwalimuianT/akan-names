@@ -24,7 +24,7 @@ input[type=submit]:hover {
 .row {
     margin-top: 50px;
     float: left;
-    margin-left: 400px;
+    margin-left: 230px;
 }
 
 #month {
@@ -43,3 +43,8 @@ input[type="number"] {
     border-radius: 5px;
 }
 
+span {
+    /* text-align: center; */
+    float: left;
+    /* margin: 0 auto; */
+}
