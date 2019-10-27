@@ -2,6 +2,7 @@
     width: 900px;
     text-align: center;
     border-color: coral;
+    background-color: aqua;
 }
 
 input[type=text], select, textarea {
