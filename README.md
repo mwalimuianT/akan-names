@@ -29,4 +29,4 @@
 - mwalimuianT.github
 
 ## License
-[MIT] 2019 copyright:(Ian Mwalimu)
+[MIT] Copyright(Ian Mwalimu)
