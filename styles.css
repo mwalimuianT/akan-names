@@ -1,3 +1,8 @@
+.jumbotron {
+    width: 900px;
+    text-align: center;
+}
+
 input[type=text], select, textarea {
     width: 110px;
     padding: 12px;
