@@ -63,7 +63,7 @@ function validate() {
         if ((leapyear==true)&&(date>29))
         {
             alert("Invalid date!");
-            return false;
+            return false
         }
     }
     if(isNaN(year)||year===""||year=== null||year <2000|| year>currentYear)
