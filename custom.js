@@ -1,3 +1,4 @@
+console.log("Tomashi");
 var maleNames = {
     Sunday:'Kwasi',
     Monday:'Kwandwo',
@@ -18,11 +19,12 @@ var femaleNames = {
     Saturday: 'Ama',
 }
 
+
 function validate() {
+    var gender = document.getElementsByName("gender");
     var date = document.getElementById("d").value;
     var month = document.getElementById("m").value;
     var year = document.getElementById("yy"),value;
-    var gender = document.getElementsByName("gend");
     var currentDate = new Date();
     var currentYear = currentDate.getFullYear();
     if(isNaN(date) || date === null || date === ""||date < 1 || date > 31){
@@ -71,31 +73,30 @@ function validate() {
     return false
 }
 
-if (gend[0].checked === false && gend[1].checked ==false) {
-    alert("choose gender");
-}
-else {
-    for (var i =0; i < gend.length;i++) {
-        if(gend[i].checked) {
-            alert(gend[i].value);
-            gend = gend[i].value;
-        }
-    }
-}
+// if(sex[0].checked === false && sex[1].checked === false) {
+//     alert("choose gender");
+// }else {
+//     for (var i =0; i < sex.length;i++) {
+//         if(sex[i].checked) {
+//             alert(sex[i].value);
+//             sex = sex[i].value;
+//         }
+//     }
+// }
 
 function myreposity(){
     var a = validate();
     var DD = parseInt(a.userDate);
     var MM = parseInt(a.useMonth);
     var newYear = a.userYear;
-    var newGender = a.userGender;
+    var newSex = a.userSex;
     var a =Math.floor((14-MM)/12);
     var y =newYear-a;
     var m =MM + 12*a-2
     var dayofTheWeek = (DD+y+Math.floor(y/4)-Math.floor(y/100)+Math.floor(newYear/400)+Math.floor((31*m)/12))%7;
     var dayofTheWeek = new Array('Sunday', 'Monday', 'Tuesday','Wenesday','Thursday','Friday','Saturday');
     var officialDay =daysofTheWeek[dayofTheWeek];
-    if (newGender ==='female') {
+    if (newSex ==='female') {
         for (var name in femaleNames) {
             if(femaleNames.hasPersonalProperty(name)) {
                 if(name ===officialDay){
@@ -104,7 +105,7 @@ function myreposity(){
             }
         }
     }  
-    else if (newGender==='male') {
+    else if (newSex==='male') {
         for(var name in maleNames) {
             if(maleNames.hasPersonalProperty(name)){
                 if(name===officialDay) {
