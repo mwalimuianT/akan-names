@@ -17,17 +17,17 @@
         <p>The application prompts the user to enter the day,month and year-of-birth to get their Akan names from the Ghanian culture depending on the week they were born.<br>The application runs in search for the key Id which checks picks the akan names according to gender</p>     
         <label for="day">Day</label>
         <div id="day">
-             <input type="number" id="d" name="date-of-birth" placeholder="dd" value="">
+             <input type="number" id="d" name="date-of-birth" placeholder="dd">
         </div>
         
         <label for="month">Month</label>
         <div id="month">
-             <input type="number" id="m" name="month-of-birth" placeholder="mm" value="">
+             <input type="number" id="m" name="month-of-birth" placeholder="mm">
         </div>
        
         <label for="year">Year</label>
         <div id="year">
-             <input type="number" id="yy" name="year-of-birth" placeholder="yyyy" value="">
+             <input type="number" id="yy" name="year-of-birth" placeholder="yyyy" >
         </div>
     </div>
       <div id="gen">
@@ -36,13 +36,15 @@
       </div>
     <div class="row">
     <form>
-        <input type="radio" name="sex" value="male">Male<br>
-        <input type="radio" name="sex" value="female">Female<br>
+        <input type="radio" name="sex" value="male" id="male">Male<br>
+        <input type="radio" name="sex" value="female" id="female">Female<br>
 
-        <input type="submit" onclick="validate()" value="Submit">
+        <a class = "btn btn-outline-primary" onclick="submission()">submit</a>
     </div>
-</form>
+
        </div>     
- <script src="custom.js"></script>      
+    </form> 
+    <p id="ppp"></p>    
+    <script src="custom.js"></script> 
 </body>
 </html>
