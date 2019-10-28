@@ -1,7 +1,12 @@
-/* .container {
-    background-image: url(https://bit.ly/2PtXrb3);
-    background-repeat: no-repeat; 
-} */
+body {
+    background-image: url(https://bit.ly/31TRIO9);
+    color: aliceblue;
+    border-radius: 250px;
+    opacity: 3Opx;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .jumbotron {
     width: 900px;
     text-align: center;
