@@ -1,4 +1,4 @@
-var submission = function () {
+var submission = function() {
 var maleNames = ['Kwasi','Kwandwo','Kwabena','Kwaku', 'yaw','Kofi', 'Kwame']
     
 var femaleNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Yaa','Afua','Ama']
