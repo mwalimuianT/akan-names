@@ -3,7 +3,7 @@ body {
     color: aliceblue;
     border-radius: 250px;
     opacity: 3Opx;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
