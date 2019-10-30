@@ -19,4 +19,3 @@ var date = document.getElementById("d").value;
     }
 
 }
-
